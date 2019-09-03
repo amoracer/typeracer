@@ -13,8 +13,12 @@
                             {{ session('status') }}
                         </div>
                     @endif
-
+    
                     Welkom bij TypeRacer
+                    <input type="text" id="typeracertext" >
+                    <script>
+                        
+                    </script>
                 </div>
             </div>
         </div>
