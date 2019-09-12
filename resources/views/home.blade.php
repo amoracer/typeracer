@@ -8,7 +8,6 @@
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header">TypeRacer</div>
-
                 <div class="card-body">
                     @if (session('status'))
                         <div class="alert alert-success" role="alert">
@@ -21,29 +20,8 @@
                     <input type='text' id='input123' name='input123'>
                     <p id="output">Your input</p>
                     <p id="checker">Your answer is correct/incorrect</p>
-                    
-                    <script>
-                    // $("#input").on('keydown', function (e) {
-                    //     alert('step2');
-                    //     if (e.keyCode === 13) {
-                    //         alert('step3');
-                    //         var input = document.getElementById("typeracerinput").value;
-                    //         //document.getElementById("output").innerHTML = input;   
-                    //         var counter;
-                    //         var word = 'test';
-                    //         var result = input.includes(word);
-                    //         if(result == true){
-                    //             document.getElementById("output").innerHTML = "<p style='color:green'>Your answer is correct</p>";
-                    //             document.getElementById("typeracerinput").value = "";
-                    //             result = false;
-                    //             counter += 1;
-                    //         }
-                    //         if(result == false){
-                    //             document.getElementById("output").innerHTML = "<p style='color:red'>Your answer is incorrect</p>";
-                    //         }
-                    //     }
-                    // });  
-                    </script>
+                    <p id="score">0/0</p>
+                    <label id="minutes">00</label>:<label id="seconds">00</label>
                 </div>
             </div>
         </div>
