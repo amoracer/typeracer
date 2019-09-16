@@ -1,12 +1,12 @@
 var counter = 0;
 var score = 0
 var finished = false;
-var difficulty1 = JSON.parse('<?= $difficulty; ?>');
-var word = ["kaas", "peter", "pietje", "saus", "griffin", "doet", "niks", "helemaal", "niks"];
+var word = ["kaas", "peter", "pietje", "saus", "jimmy", "doet", "niks", "helemaal", "niks"];
 var sec = 0;
 function load(){
     document.getElementById("word").innerHTML = word[counter];
     document.getElementById("score").innerHTML = score + "/" + word.length;
+    
 }
 
 function test(e){   
