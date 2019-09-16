@@ -1,12 +1,12 @@
 var counter = 0;
 var score = 0
 var finished = false;
-var word = ["kaas", "peter", "pietje", "saus", "jimmy", "doet", "niks", "helemaal", "niks"];
+var word1 = ["kaas", "peter", "pietje", "saus", "jimmy", "doet", "niks", "helemaal", "niks"];
 var sec = 0;
 function load(){
-    document.getElementById("word").innerHTML = word[counter];
+    console.log(word)
+    document.getElementById("word").innerHTML = word[counter]["word_list"];
     document.getElementById("score").innerHTML = score + "/" + word.length;
-    
 }
 
 function test(e){   
@@ -14,7 +14,7 @@ function test(e){
     var keycode = (e.keyCode ? e.keyCode : e.which);
     if (keycode === 13) {
     var input = document.getElementById("input123").value;
-    if(input === word[counter]){
+    if(input === word[counter]["word_list"]){
         document.getElementById("checker").innerHTML = "<p style='color:green'>Your answer is correct</p>";
         document.getElementById("input123").value = "";
         result = false;
@@ -28,10 +28,10 @@ function test(e){
     }
     if (counter == word.length){
         counter = 0;
-        document.getElementById("word").innerHTML = word[counter];
+        document.getElementById("word").innerHTML = word[counter]["word_list"];
 
     }
-    document.getElementById("word").innerHTML = word[counter];
+    document.getElementById("word").innerHTML = word[counter]["word_list"];
     if(score >= word.length){
         document.getElementById("score").innerHTML = "<p style='color:green'>Finsihed!</p>";
         document.getElementById("input123").disabled = true;

@@ -3,6 +3,10 @@
 @section('content')
 
 <script src="js/index.js"></script>
+<script>
+var word = JSON.parse('{!! json_encode($difficulty1) !!}')
+
+</script>
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
