@@ -20,7 +20,7 @@
                     <input type='text' id='input123' name='input123'>
                     <p id="output">Your input</p>
                     <p id="checker">Your answer is correct/incorrect</p>
-                    <p id="score">0/0</p>
+                        <p id="totaal"></p><p id="score"></p>
                     <span id="minutes">00</span>:<span id="seconds">00</span>
                 </div>
             </div>
