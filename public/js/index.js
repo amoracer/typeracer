@@ -33,11 +33,14 @@ function test(e){
     }
     document.getElementById("word").innerHTML = word[counter]["word_list"];
     if(score >= word.length){
-        document.getElementById("totaal").innerHTML = "<p style='color:green'>Your score:</p>";
-        document.getElementById("score").innerHTML = score;
+        document.getElementById("score").innerHTML = "<p style='color:green'>Finsihed!</p>";
         document.getElementById("input123").disabled = true;
         finished = true;
-    };
+    }
+    else{
+        document.getElementById("score").innerHTML = score + "/" + word.length;    
+    }
+    }};
         
 }
 //Bron: https://stackoverflow.com/questions/5517597/plain-count-up-timer-in-javascript/7910506
