@@ -1,7 +1,9 @@
 var counter = 0;
 var score = 0
 var finished = false;
-var word = ["kaas", "peter", "pietje"];
+var difficulty1 = JSON.parse('<?= $difficulty; ?>');
+var word = ["kaas", "peter", "pietje", "saus", "griffin", "doet", "niks", "helemaal", "niks"];
+var sec = 0;
 function load(){
     document.getElementById("word").innerHTML = word[counter];
     document.getElementById("score").innerHTML = score + "/" + word.length;
@@ -36,29 +38,18 @@ function test(e){
         finished = true;
     }
     else{
-        document.getElementById("score").innerHTML = score + "/" + word.length;
+        document.getElementById("score").innerHTML = score + "/" + word.length;    
     }
-    }
-    }
-    
+    }};
+        
 }
-
-var minutesLabel = document.getElementById("minutes");
-var secondsLabel = document.getElementById("seconds");
-var totalSeconds = 0;
-setInterval(setTime, 1000);
-
-function setTime() {
-  ++totalSeconds;
-  secondsLabel.innerHTML = pad(totalSeconds % 60);
-  minutesLabel.innerHTML = pad(parseInt(totalSeconds / 60));
-}
-
-function pad(val) {
-  var valString = val + "";
-  if (valString.length < 2) {
-    return "0" + valString;
-  } else {
-    return valString;
-  }
-}
+//Bron: https://stackoverflow.com/questions/5517597/plain-count-up-timer-in-javascript/7910506
+function pad ( val ) { return val > 9 ? val : "0" + val; }
+setInterval( function(){
+    if (finished == false){
+    document.getElementById("seconds").innerHTML=pad(++sec%60);
+    document.getElementById("minutes").innerHTML=pad(parseInt(sec/60,10));
+    // if (finished == true){       
+    // nog iets bedenken ~k
+    // }
+}},1000)

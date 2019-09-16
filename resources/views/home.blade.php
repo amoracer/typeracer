@@ -21,7 +21,7 @@
                     <p id="output">Your input</p>
                     <p id="checker">Your answer is correct/incorrect</p>
                     <p id="score">0/0</p>
-                    <label id="minutes">00</label>:<label id="seconds">00</label>
+                    <span id="minutes">00</span>:<span id="seconds">00</span>
                 </div>
             </div>
         </div>
