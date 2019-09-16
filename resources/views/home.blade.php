@@ -20,6 +20,7 @@ var word = JSON.parse('{!! json_encode($difficulty1) !!}')
                     @endif
     
                     Welkom bij TypeRacer
+                     <img src="">
                     <p id="word">Loading...</p>
                     <input type='text' id='input123' name='input123'>
                     <p id="output">Your input</p>
