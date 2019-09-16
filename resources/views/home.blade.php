@@ -18,7 +18,7 @@ var word = JSON.parse('{!! json_encode($difficulty1) !!}')
                             {{ session('status') }}
                         </div>
                     @endif
-    
+
                     Welkom bij TypeRacer
                      <img src="">
                     <p id="word">Loading...</p>
