@@ -4,7 +4,7 @@
 
 <script src="js/index.js"></script>
 <script>
-var word = JSON.parse('{!! json_encode($difficulty1) !!}')
+var word = JSON.parse('{!! json_encode($difficulty2) !!}')
 
 </script>
 <div class="container">
@@ -19,14 +19,14 @@ var word = JSON.parse('{!! json_encode($difficulty1) !!}')
                         </div>
                     @endif
 
-                    Welkom bij TypeRacer
+                    <h2>Welkom bij TypeRacer</h2>
                      <img src="">
-                    <p id="word">Loading...</p>
-                    <input type='text' id='input123' name='input123'>
-                    <p id="output">Your input</p>
-                    <p id="checker">Your answer is correct/incorrect</p>
+                    <p id="word" style="font-size: 90px;">Loading...</p>
+                    <input type='text' id='input123' name='input123' style="font-size: 20px;">
+                    <p id="checker" style="font-size: 20px;">Your answer is correct/incorrect</p>
                         <p id="totaal"></p><p id="score"></p>
                     <span id="minutes">00</span>:<span id="seconds">00</span>
+                    <p id="mistakes" style="color: red;">Fout: 0</p>
                 </div>
             </div>
         </div>
