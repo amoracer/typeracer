@@ -27,6 +27,8 @@ var word = JSON.parse('{!! json_encode($difficulty2) !!}')
                         <p id="totaal"></p><p id="score"></p>
                     <span id="minutes">00</span>:<span id="seconds">00</span>
                     <p id="mistakes" style="color: red;">Fout: 0</p>
+                    <img src="img/blackcar.png" alt="blackcar">
+                    <img src="img/blackcar.png" alt="blackcar">
                 </div>
             </div>
         </div>
