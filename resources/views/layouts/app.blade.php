@@ -18,6 +18,11 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <style>
+    body {
+        background-image: url("img/background.jpg");
+    }
+</style>
 </head>
 <body onkeydown="test(event)" oncut="return false" onpaste="return false" onload="load()">
     <div id="app">

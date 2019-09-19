@@ -3,7 +3,6 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
         <title>TypeRacer</title>
 
         <!-- Fonts -->
@@ -18,6 +17,7 @@
                 font-weight: 200;
                 height: 100vh;
                 margin: 0;
+                background-image: url("img/background.jpg");
             }
 
             .full-height {
@@ -44,6 +44,8 @@
                 text-align: center;
             }
 
+            
+
             .title {
                 font-size: 84px;
             }
@@ -60,6 +62,18 @@
 
             .m-b-md {
                 margin-bottom: 30px;
+            }
+            h1 {
+                font-weight: bold;
+                color: black;
+            }
+            p {
+                font-size: 35px;
+                font-weight: bold;
+                color: black;
+            }
+            a {
+                text-decoration: none;
             }
         </style>
     </head>
@@ -81,7 +95,8 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    TypeRacer
+                    <h1>TypeRacer</h1>
+                    <p>Welkom bij TypeRacer <a href="{{ route('login') }}">Login</a> of <a href="{{ route('register') }}">Register</a> om mee te doen!</p>
                 </div>
 
                 <div class="links">
