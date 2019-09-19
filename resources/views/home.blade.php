@@ -5,12 +5,12 @@
 <script src="js/index.js"></script>
 <script>
 var word = JSON.parse('{!! json_encode($difficulty2) !!}')
-
 </script>
 <style>
     body {
         background-image: url("img/background.jpg");
     }
+    
 </style>
 <div class="container">
     <div class="row justify-content-center">
@@ -32,8 +32,8 @@ var word = JSON.parse('{!! json_encode($difficulty2) !!}')
                         <p id="totaal"></p><p id="score"></p>
                     <span id="minutes">00</span>:<span id="seconds">00</span>
                     <p id="mistakes" style="color: red;">Fout: 0</p>
-                    <img class="car" src="img/blackcar.png" alt="blackcar">
-                    <img class="car" src="img/blackcar.png" alt="blackcar">
+                    <img class="car" src="img/blackcar.png" alt="blackcar"><br>
+                    <img class="car1" src="img/blackcar.png" alt="blackcar">
                 </div>
             </div>
         </div>

@@ -22,6 +22,12 @@
     body {
         background-image: url("img/background.jpg");
     }
+    .car {
+        width: 150px;
+    }
+    .car1 {
+        width: 150px;
+    }
 </style>
 </head>
 <body onkeydown="test(event)" oncut="return false" onpaste="return false" onload="load()">
